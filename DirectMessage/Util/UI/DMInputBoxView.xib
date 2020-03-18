@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DMInputBoxView" customModule="DirectMessage" customModuleProvider="target">
+            <connections>
+                <outlet property="inputBoxView" destination="cm1-1G-fGz" id="YUR-TI-eSY"/>
+                <outlet property="sendButton" destination="xEE-l4-MRN" id="jFY-p1-gLa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxk-bk-LYM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEE-l4-MRN">
+                            <rect key="frame" x="311" y="4" width="48" height="36"/>
+                            <accessibility key="accessibilityConfiguration" identifier="sendButton"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="VkV-jC-2Cn"/>
+                                <constraint firstAttribute="height" constant="36" id="rBD-VX-XVL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="Send"/>
+                            <connections>
+                                <action selector="sendButtonTapped:" destination="-1" eventType="touchUpInside" id="i4K-nx-sXu"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Aa" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cm1-1G-fGz">
+                            <rect key="frame" x="16" y="4" width="283" height="36"/>
+                            <accessibility key="accessibilityConfiguration" identifier="inputBoxView"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="wN9-N3-CoR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                    <constraints>
+                        <constraint firstItem="cm1-1G-fGz" firstAttribute="centerY" secondItem="xEE-l4-MRN" secondAttribute="centerY" id="7bA-5h-Udj"/>
+                        <constraint firstItem="b2C-aY-OPw" firstAttribute="bottom" secondItem="xEE-l4-MRN" secondAttribute="bottom" constant="4" id="Snj-Ec-GpM"/>
+                        <constraint firstItem="b2C-aY-OPw" firstAttribute="trailing" secondItem="xEE-l4-MRN" secondAttribute="trailing" constant="16" id="VW9-0l-ZTA"/>
+                        <constraint firstItem="cm1-1G-fGz" firstAttribute="leading" secondItem="b2C-aY-OPw" secondAttribute="leading" constant="16" id="fiQ-CK-58w"/>
+                        <constraint firstItem="xEE-l4-MRN" firstAttribute="leading" secondItem="cm1-1G-fGz" secondAttribute="trailing" constant="12" id="h3f-a9-k7i"/>
+                        <constraint firstItem="xEE-l4-MRN" firstAttribute="top" secondItem="sxk-bk-LYM" secondAttribute="top" constant="4" id="oKk-aS-Pc5"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="b2C-aY-OPw"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+            <constraints>
+                <constraint firstItem="sxk-bk-LYM" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="8cS-RK-NPy"/>
+                <constraint firstItem="sxk-bk-LYM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AkD-u9-qjg"/>
+                <constraint firstItem="sxk-bk-LYM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="G1p-7J-HlG"/>
+                <constraint firstAttribute="bottom" secondItem="sxk-bk-LYM" secondAttribute="bottom" id="eKi-OH-fon"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140.57971014492756" y="148.66071428571428"/>
+        </view>
+    </objects>
+</document>

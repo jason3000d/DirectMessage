@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80427C9924192A1500B9CB0E /* DMUserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80427C9724192A1500B9CB0E /* DMUserListTableViewCell.swift */; };
+		80427C9A24192A1500B9CB0E /* DMUserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80427C9824192A1500B9CB0E /* DMUserListTableViewCell.xib */; };
+		80427C9C24193CB900B9CB0E /* DMBaseService+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80427C9B24193CB900B9CB0E /* DMBaseService+Image.swift */; };
+		80427C9E24193D1600B9CB0E /* UIImage+DMAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80427C9D24193D1600B9CB0E /* UIImage+DMAdditions.swift */; };
+		808755B42414E47200551546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808755B32414E47200551546 /* AppDelegate.swift */; };
+		808755BD2414E47800551546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808755BC2414E47800551546 /* Assets.xcassets */; };
+		808755C02414E47800551546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808755BE2414E47800551546 /* LaunchScreen.storyboard */; };
+		808755CB2414E47800551546 /* DirectMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808755CA2414E47800551546 /* DirectMessageTests.swift */; };
+		808755D62414E47800551546 /* DirectMessageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808755D52414E47800551546 /* DirectMessageUITests.swift */; };
+		808755E72414EE6700551546 /* DMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808755E62414EE6700551546 /* DMUser.swift */; };
+		808755E92414FA0400551546 /* DMBaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808755E82414FA0400551546 /* DMBaseService.swift */; };
+		808C5541241E1EE1002C398B /* DMInputBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C5540241E1EE1002C398B /* DMInputBoxView.swift */; };
+		808C5543241E1EF2002C398B /* DMInputBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 808C5542241E1EF2002C398B /* DMInputBoxView.xib */; };
+		808C5547241E6BB1002C398B /* DMBasePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C5546241E6BB1002C398B /* DMBasePage.swift */; };
+		808C5549241E6CE8002C398B /* DMUserListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C5548241E6CE8002C398B /* DMUserListPage.swift */; };
+		808C554C241E6DB1002C398B /* DMTestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C554B241E6DB1002C398B /* DMTestBuilder.swift */; };
+		808C554E241E7160002C398B /* DMUserListPageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808C554D241E7160002C398B /* DMUserListPageItem.swift */; };
+		8094DABA241CBB4F000E7B27 /* DMImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094DAB9241CBB4F000E7B27 /* DMImageDataStore.swift */; };
+		8094DABD241CBF40000E7B27 /* DMMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094DABB241CBF40000E7B27 /* DMMessageViewController.swift */; };
+		8094DABE241CBF40000E7B27 /* DMMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8094DABC241CBF40000E7B27 /* DMMessageViewController.xib */; };
+		8094DAC1241CF599000E7B27 /* DMPeerChannelMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094DABF241CF599000E7B27 /* DMPeerChannelMessageTableViewCell.swift */; };
+		8094DAC2241CF599000E7B27 /* DMPeerChannelMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8094DAC0241CF599000E7B27 /* DMPeerChannelMessageTableViewCell.xib */; };
+		8094DAC5241D1FBC000E7B27 /* DMMyChannelMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094DAC3241D1FBC000E7B27 /* DMMyChannelMessageTableViewCell.swift */; };
+		8094DAC6241D1FBC000E7B27 /* DMMyChannelMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8094DAC4241D1FBC000E7B27 /* DMMyChannelMessageTableViewCell.xib */; };
+		8094DACA241E0699000E7B27 /* DMMessageText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8094DAC9241E0699000E7B27 /* DMMessageText.swift */; };
+		80A8C19824152EC5005E0D31 /* NSError+DMAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8C19724152EC5005E0D31 /* NSError+DMAdditions.swift */; };
+		80A8C19C24153568005E0D31 /* DMBaseService+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8C19B24153568005E0D31 /* DMBaseService+User.swift */; };
+		80A8C1A524154A4F005E0D31 /* DMUserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8C1A324154A4F005E0D31 /* DMUserListViewController.swift */; };
+		80A8C1A624154A4F005E0D31 /* DMUserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A8C1A424154A4F005E0D31 /* DMUserListViewController.xib */; };
+		80A8C1E424154E27005E0D31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8C1E324154E26005E0D31 /* SceneDelegate.swift */; };
+		80AFC107241E768A0068296F /* DMMessagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AFC106241E768A0068296F /* DMMessagePage.swift */; };
+		80AFC109241E77880068296F /* DMInputBoxViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AFC108241E77880068296F /* DMInputBoxViewPage.swift */; };
+		80BB964F241574A0009BA0C0 /* DMServiceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BB964E241574A0009BA0C0 /* DMServiceUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		808755C72414E47800551546 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808755A82414E47200551546 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808755AF2414E47200551546;
+			remoteInfo = DirectMessage;
+		};
+		808755D22414E47800551546 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808755A82414E47200551546 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 808755AF2414E47200551546;
+			remoteInfo = DirectMessage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80427C9724192A1500B9CB0E /* DMUserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMUserListTableViewCell.swift; sourceTree = "<group>"; };
+		80427C9824192A1500B9CB0E /* DMUserListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DMUserListTableViewCell.xib; sourceTree = "<group>"; };
+		80427C9B24193CB900B9CB0E /* DMBaseService+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DMBaseService+Image.swift"; sourceTree = "<group>"; };
+		80427C9D24193D1600B9CB0E /* UIImage+DMAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+DMAdditions.swift"; sourceTree = "<group>"; };
+		808755B02414E47200551546 /* DirectMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirectMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		808755B32414E47200551546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		808755BC2414E47800551546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		808755BF2414E47800551546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		808755C12414E47800551546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808755C62414E47800551546 /* DirectMessageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DirectMessageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		808755CA2414E47800551546 /* DirectMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageTests.swift; sourceTree = "<group>"; };
+		808755CC2414E47800551546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808755D12414E47800551546 /* DirectMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DirectMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		808755D52414E47800551546 /* DirectMessageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageUITests.swift; sourceTree = "<group>"; };
+		808755D72414E47800551546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808755E62414EE6700551546 /* DMUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMUser.swift; sourceTree = "<group>"; };
+		808755E82414FA0400551546 /* DMBaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMBaseService.swift; sourceTree = "<group>"; };
+		808C5540241E1EE1002C398B /* DMInputBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMInputBoxView.swift; sourceTree = "<group>"; };
+		808C5542241E1EF2002C398B /* DMInputBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DMInputBoxView.xib; sourceTree = "<group>"; };
+		808C5546241E6BB1002C398B /* DMBasePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMBasePage.swift; sourceTree = "<group>"; };
+		808C5548241E6CE8002C398B /* DMUserListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMUserListPage.swift; sourceTree = "<group>"; };
+		808C554B241E6DB1002C398B /* DMTestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMTestBuilder.swift; sourceTree = "<group>"; };
+		808C554D241E7160002C398B /* DMUserListPageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMUserListPageItem.swift; sourceTree = "<group>"; };
+		8094DAB9241CBB4F000E7B27 /* DMImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMImageDataStore.swift; sourceTree = "<group>"; };
+		8094DABB241CBF40000E7B27 /* DMMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMMessageViewController.swift; sourceTree = "<group>"; };
+		8094DABC241CBF40000E7B27 /* DMMessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DMMessageViewController.xib; sourceTree = "<group>"; };
+		8094DABF241CF599000E7B27 /* DMPeerChannelMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMPeerChannelMessageTableViewCell.swift; sourceTree = "<group>"; };
+		8094DAC0241CF599000E7B27 /* DMPeerChannelMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DMPeerChannelMessageTableViewCell.xib; sourceTree = "<group>"; };
+		8094DAC3241D1FBC000E7B27 /* DMMyChannelMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMMyChannelMessageTableViewCell.swift; sourceTree = "<group>"; };
+		8094DAC4241D1FBC000E7B27 /* DMMyChannelMessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DMMyChannelMessageTableViewCell.xib; sourceTree = "<group>"; };
+		8094DAC9241E0699000E7B27 /* DMMessageText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMMessageText.swift; sourceTree = "<group>"; };
+		80A8C19724152EC5005E0D31 /* NSError+DMAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+DMAdditions.swift"; sourceTree = "<group>"; };
+		80A8C19B24153568005E0D31 /* DMBaseService+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DMBaseService+User.swift"; sourceTree = "<group>"; };
+		80A8C1A324154A4F005E0D31 /* DMUserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMUserListViewController.swift; sourceTree = "<group>"; };
+		80A8C1A424154A4F005E0D31 /* DMUserListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DMUserListViewController.xib; sourceTree = "<group>"; };
+		80A8C1E324154E26005E0D31 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		80AFC106241E768A0068296F /* DMMessagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMMessagePage.swift; sourceTree = "<group>"; };
+		80AFC108241E77880068296F /* DMInputBoxViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMInputBoxViewPage.swift; sourceTree = "<group>"; };
+		80BB964E241574A0009BA0C0 /* DMServiceUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMServiceUtils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		808755AD2414E47200551546 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808755C32414E47800551546 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808755CE2414E47800551546 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		808755A72414E47200551546 = {
+			isa = PBXGroup;
+			children = (
+				808755B22414E47200551546 /* DirectMessage */,
+				808755C92414E47800551546 /* DirectMessageTests */,
+				808755D42414E47800551546 /* DirectMessageUITests */,
+				808755B12414E47200551546 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		808755B12414E47200551546 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				808755B02414E47200551546 /* DirectMessage.app */,
+				808755C62414E47800551546 /* DirectMessageTests.xctest */,
+				808755D12414E47800551546 /* DirectMessageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		808755B22414E47200551546 /* DirectMessage */ = {
+			isa = PBXGroup;
+			children = (
+				808755B32414E47200551546 /* AppDelegate.swift */,
+				80A8C1E324154E26005E0D31 /* SceneDelegate.swift */,
+				80A8C1A224154A30005E0D31 /* UI */,
+				80A8C19324152E56005E0D31 /* Util */,
+				808755E32414EDE500551546 /* Data */,
+				808755BC2414E47800551546 /* Assets.xcassets */,
+				808755BE2414E47800551546 /* LaunchScreen.storyboard */,
+				808755C12414E47800551546 /* Info.plist */,
+			);
+			path = DirectMessage;
+			sourceTree = "<group>";
+		};
+		808755C92414E47800551546 /* DirectMessageTests */ = {
+			isa = PBXGroup;
+			children = (
+				808755CA2414E47800551546 /* DirectMessageTests.swift */,
+				808755CC2414E47800551546 /* Info.plist */,
+			);
+			path = DirectMessageTests;
+			sourceTree = "<group>";
+		};
+		808755D42414E47800551546 /* DirectMessageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				808755D52414E47800551546 /* DirectMessageUITests.swift */,
+				808C554A241E6D96002C398B /* Util */,
+				808C5545241E6B8B002C398B /* PageObject */,
+				808755D72414E47800551546 /* Info.plist */,
+			);
+			path = DirectMessageUITests;
+			sourceTree = "<group>";
+		};
+		808755E32414EDE500551546 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				808755E52414EE2600551546 /* Service */,
+				808755E42414EE1900551546 /* DataObjects */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		808755E42414EE1900551546 /* DataObjects */ = {
+			isa = PBXGroup;
+			children = (
+				808755E62414EE6700551546 /* DMUser.swift */,
+				8094DAB9241CBB4F000E7B27 /* DMImageDataStore.swift */,
+				8094DAC9241E0699000E7B27 /* DMMessageText.swift */,
+			);
+			path = DataObjects;
+			sourceTree = "<group>";
+		};
+		808755E52414EE2600551546 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				80BB964E241574A0009BA0C0 /* DMServiceUtils.swift */,
+				808755E82414FA0400551546 /* DMBaseService.swift */,
+				80A8C19B24153568005E0D31 /* DMBaseService+User.swift */,
+				80427C9B24193CB900B9CB0E /* DMBaseService+Image.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		808C5545241E6B8B002C398B /* PageObject */ = {
+			isa = PBXGroup;
+			children = (
+				808C5546241E6BB1002C398B /* DMBasePage.swift */,
+				808C5548241E6CE8002C398B /* DMUserListPage.swift */,
+				808C554D241E7160002C398B /* DMUserListPageItem.swift */,
+				80AFC106241E768A0068296F /* DMMessagePage.swift */,
+				80AFC108241E77880068296F /* DMInputBoxViewPage.swift */,
+			);
+			path = PageObject;
+			sourceTree = "<group>";
+		};
+		808C554A241E6D96002C398B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				808C554B241E6DB1002C398B /* DMTestBuilder.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		80A8C19324152E56005E0D31 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				80A8C19424152E68005E0D31 /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		80A8C19424152E68005E0D31 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				80A8C19724152EC5005E0D31 /* NSError+DMAdditions.swift */,
+				80427C9D24193D1600B9CB0E /* UIImage+DMAdditions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		80A8C1A224154A30005E0D31 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				80A8C1A324154A4F005E0D31 /* DMUserListViewController.swift */,
+				80A8C1A424154A4F005E0D31 /* DMUserListViewController.xib */,
+				80427C9724192A1500B9CB0E /* DMUserListTableViewCell.swift */,
+				80427C9824192A1500B9CB0E /* DMUserListTableViewCell.xib */,
+				8094DABB241CBF40000E7B27 /* DMMessageViewController.swift */,
+				8094DABC241CBF40000E7B27 /* DMMessageViewController.xib */,
+				8094DABF241CF599000E7B27 /* DMPeerChannelMessageTableViewCell.swift */,
+				8094DAC0241CF599000E7B27 /* DMPeerChannelMessageTableViewCell.xib */,
+				8094DAC3241D1FBC000E7B27 /* DMMyChannelMessageTableViewCell.swift */,
+				8094DAC4241D1FBC000E7B27 /* DMMyChannelMessageTableViewCell.xib */,
+				808C5540241E1EE1002C398B /* DMInputBoxView.swift */,
+				808C5542241E1EF2002C398B /* DMInputBoxView.xib */,
+			);
+			name = UI;
+			path = Util/UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		808755AF2414E47200551546 /* DirectMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 808755DA2414E47800551546 /* Build configuration list for PBXNativeTarget "DirectMessage" */;
+			buildPhases = (
+				808755AC2414E47200551546 /* Sources */,
+				808755AD2414E47200551546 /* Frameworks */,
+				808755AE2414E47200551546 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DirectMessage;
+			productName = DirectMessage;
+			productReference = 808755B02414E47200551546 /* DirectMessage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		808755C52414E47800551546 /* DirectMessageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 808755DD2414E47800551546 /* Build configuration list for PBXNativeTarget "DirectMessageTests" */;
+			buildPhases = (
+				808755C22414E47800551546 /* Sources */,
+				808755C32414E47800551546 /* Frameworks */,
+				808755C42414E47800551546 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				808755C82414E47800551546 /* PBXTargetDependency */,
+			);
+			name = DirectMessageTests;
+			productName = DirectMessageTests;
+			productReference = 808755C62414E47800551546 /* DirectMessageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		808755D02414E47800551546 /* DirectMessageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 808755E02414E47800551546 /* Build configuration list for PBXNativeTarget "DirectMessageUITests" */;
+			buildPhases = (
+				808755CD2414E47800551546 /* Sources */,
+				808755CE2414E47800551546 /* Frameworks */,
+				808755CF2414E47800551546 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				808755D32414E47800551546 /* PBXTargetDependency */,
+			);
+			name = DirectMessageUITests;
+			productName = DirectMessageUITests;
+			productReference = 808755D12414E47800551546 /* DirectMessageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		808755A82414E47200551546 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Paradise;
+				TargetAttributes = {
+					808755AF2414E47200551546 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					808755C52414E47800551546 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 808755AF2414E47200551546;
+					};
+					808755D02414E47800551546 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 808755AF2414E47200551546;
+					};
+				};
+			};
+			buildConfigurationList = 808755AB2414E47200551546 /* Build configuration list for PBXProject "DirectMessage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 808755A72414E47200551546;
+			productRefGroup = 808755B12414E47200551546 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				808755AF2414E47200551546 /* DirectMessage */,
+				808755C52414E47800551546 /* DirectMessageTests */,
+				808755D02414E47800551546 /* DirectMessageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		808755AE2414E47200551546 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8094DAC2241CF599000E7B27 /* DMPeerChannelMessageTableViewCell.xib in Resources */,
+				80A8C1A624154A4F005E0D31 /* DMUserListViewController.xib in Resources */,
+				80427C9A24192A1500B9CB0E /* DMUserListTableViewCell.xib in Resources */,
+				808755C02414E47800551546 /* LaunchScreen.storyboard in Resources */,
+				808C5543241E1EF2002C398B /* DMInputBoxView.xib in Resources */,
+				8094DABE241CBF40000E7B27 /* DMMessageViewController.xib in Resources */,
+				8094DAC6241D1FBC000E7B27 /* DMMyChannelMessageTableViewCell.xib in Resources */,
+				808755BD2414E47800551546 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808755C42414E47800551546 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808755CF2414E47800551546 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		808755AC2414E47200551546 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8094DABA241CBB4F000E7B27 /* DMImageDataStore.swift in Sources */,
+				808755E92414FA0400551546 /* DMBaseService.swift in Sources */,
+				808C5541241E1EE1002C398B /* DMInputBoxView.swift in Sources */,
+				80A8C1E424154E27005E0D31 /* SceneDelegate.swift in Sources */,
+				80BB964F241574A0009BA0C0 /* DMServiceUtils.swift in Sources */,
+				808755B42414E47200551546 /* AppDelegate.swift in Sources */,
+				8094DABD241CBF40000E7B27 /* DMMessageViewController.swift in Sources */,
+				8094DAC1241CF599000E7B27 /* DMPeerChannelMessageTableViewCell.swift in Sources */,
+				8094DAC5241D1FBC000E7B27 /* DMMyChannelMessageTableViewCell.swift in Sources */,
+				80A8C19824152EC5005E0D31 /* NSError+DMAdditions.swift in Sources */,
+				8094DACA241E0699000E7B27 /* DMMessageText.swift in Sources */,
+				80427C9E24193D1600B9CB0E /* UIImage+DMAdditions.swift in Sources */,
+				80A8C19C24153568005E0D31 /* DMBaseService+User.swift in Sources */,
+				80427C9924192A1500B9CB0E /* DMUserListTableViewCell.swift in Sources */,
+				80A8C1A524154A4F005E0D31 /* DMUserListViewController.swift in Sources */,
+				808755E72414EE6700551546 /* DMUser.swift in Sources */,
+				80427C9C24193CB900B9CB0E /* DMBaseService+Image.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808755C22414E47800551546 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808755CB2414E47800551546 /* DirectMessageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808755CD2414E47800551546 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808C5547241E6BB1002C398B /* DMBasePage.swift in Sources */,
+				80AFC107241E768A0068296F /* DMMessagePage.swift in Sources */,
+				808755D62414E47800551546 /* DirectMessageUITests.swift in Sources */,
+				80AFC109241E77880068296F /* DMInputBoxViewPage.swift in Sources */,
+				808C554E241E7160002C398B /* DMUserListPageItem.swift in Sources */,
+				808C554C241E6DB1002C398B /* DMTestBuilder.swift in Sources */,
+				808C5549241E6CE8002C398B /* DMUserListPage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		808755C82414E47800551546 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808755AF2414E47200551546 /* DirectMessage */;
+			targetProxy = 808755C72414E47800551546 /* PBXContainerItemProxy */;
+		};
+		808755D32414E47800551546 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 808755AF2414E47200551546 /* DirectMessage */;
+			targetProxy = 808755D22414E47800551546 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		808755BE2414E47800551546 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808755BF2414E47800551546 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		808755D82414E47800551546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		808755D92414E47800551546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		808755DB2414E47800551546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98ELDUEP7F;
+				INFOPLIST_FILE = DirectMessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paradise.DirectMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		808755DC2414E47800551546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98ELDUEP7F;
+				INFOPLIST_FILE = DirectMessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paradise.DirectMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		808755DE2414E47800551546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98ELDUEP7F;
+				INFOPLIST_FILE = DirectMessageTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paradise.DirectMessageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DirectMessage.app/DirectMessage";
+			};
+			name = Debug;
+		};
+		808755DF2414E47800551546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98ELDUEP7F;
+				INFOPLIST_FILE = DirectMessageTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paradise.DirectMessageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DirectMessage.app/DirectMessage";
+			};
+			name = Release;
+		};
+		808755E12414E47800551546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98ELDUEP7F;
+				INFOPLIST_FILE = DirectMessageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paradise.DirectMessageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DirectMessage;
+			};
+			name = Debug;
+		};
+		808755E22414E47800551546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 98ELDUEP7F;
+				INFOPLIST_FILE = DirectMessageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paradise.DirectMessageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DirectMessage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		808755AB2414E47200551546 /* Build configuration list for PBXProject "DirectMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808755D82414E47800551546 /* Debug */,
+				808755D92414E47800551546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		808755DA2414E47800551546 /* Build configuration list for PBXNativeTarget "DirectMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808755DB2414E47800551546 /* Debug */,
+				808755DC2414E47800551546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		808755DD2414E47800551546 /* Build configuration list for PBXNativeTarget "DirectMessageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808755DE2414E47800551546 /* Debug */,
+				808755DF2414E47800551546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		808755E02414E47800551546 /* Build configuration list for PBXNativeTarget "DirectMessageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808755E12414E47800551546 /* Debug */,
+				808755E22414E47800551546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 808755A82414E47200551546 /* Project object */;
+}
